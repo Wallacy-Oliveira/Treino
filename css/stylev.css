@@ -1,0 +1,152 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Título da página */
+.titulo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.titulo h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.titulo label {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Mensagem de sucesso */
+.mensagem {
+    text-align: center;
+    padding: 15px;
+    border-radius: 6px;
+    background-color: #e6fbe6;
+    color: #256029;
+    border: 1px solid #b6e2b6;
+    margin: 0 auto 30px auto;
+    max-width: 700px;
+    font-weight: bold;
+}
+
+/* Container geral */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Cartão de pensamento */
+.filo-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    transition: 0.2s ease;
+}
+
+.filo-card:hover {
+    transform: translateY(-3px);
+}
+
+.filo-card h2 {
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.filo-card h4 {
+    color: #777;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.filo-card p {
+    line-height: 1.6;
+    color: #444;
+}
+
+/* Ações (botões) */
+.actions {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.editar {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.editar:hover {
+    background-color: #e0a800;
+}
+
+.deletar {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.deletar:hover {
+    background-color: #c82333;
+}
+
+/* Info quando não há registros */
+.info {
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+    margin-top: 40px;
+}
+.data-criacao {
+    display: block;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #888;
+}
+.navbar {
+    background-color: #333;
+    width: 100%;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ff9900;
+}
