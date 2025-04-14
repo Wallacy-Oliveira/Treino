@@ -8,6 +8,7 @@ include 'conexao.php';
 <head>
     <meta charset="UTF-8">
     <title>Filosofias e Poemas Salvos</title>
+    <link rel="shortcut icon" type="imagex/png" href="./img/casa.png">
     <link rel="stylesheet" href="./css/stylev.css">
 </head>
 
