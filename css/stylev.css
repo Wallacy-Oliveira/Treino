@@ -120,17 +120,20 @@ body {
     font-size: 16px;
     margin-top: 40px;
 }
+
 .data-criacao {
     display: block;
     margin-top: 10px;
     font-size: 13px;
     color: #888;
 }
+
+/* Navbar */
 .navbar {
     background-color: #333;
-    width: 100%;
-    padding: 1rem 0;
-    margin-bottom: 2rem;
+    width: auto;
+    padding: auto;
+    margin-bottom: auto;
 }
 
 .navbar ul {
@@ -138,6 +141,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .navbar a {
@@ -149,4 +153,113 @@ body {
 
 .navbar a:hover {
     color: #ff9900;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .titulo h1 {
+        font-size: 2rem;
+    }
+
+    .titulo label {
+        font-size: 0.9rem;
+    }
+
+    .mensagem {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .filo-card {
+        padding: 15px;
+    }
+
+    .filo-card h2 {
+        font-size: 1.2rem;
+    }
+
+    .filo-card h4 {
+        font-size: 1rem;
+    }
+
+    .filo-card p {
+        font-size: 0.95rem;
+    }
+
+    .btn {
+        padding: 8px 14px;
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+.comentario-box {
+    margin-top: 15px;
+}
+
+.comentario-input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    resize: vertical;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.btn.comentar {
+    background-color: #28a745;
+    color: white;
+    padding: 6px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn.comentar:hover {
+    background-color: #218838;
+}
+
+.likes-box {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn.like-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 6px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn.like-btn:hover {
+    background-color: #0056b3;
+}
+
+.like-count {
+    font-size: 14px;
+    color: #555;
+}
+
+.comentario {
+    margin-top: 8px;
+    font-size: 14px;
+    background-color: #f2f2f2;
+    padding: 6px 10px;
+    border-radius: 5px;
 }

@@ -130,3 +130,42 @@ input[type="submit"]:hover {
     margin-top: 1rem;
     text-align: center;
 }
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .form-group-container {
+        flex-direction: column;
+    }
+
+    .titulo h1 {
+        font-size: 1.5rem;
+    }
+
+    .titulo label {
+        font-size: 0.9rem;
+    }
+
+    form {
+        padding: 1.5rem;
+    }
+
+    input[type="text"],
+    textarea {
+        font-size: 0.95rem;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        font-size: 1rem;
+    }
+}

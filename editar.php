@@ -41,12 +41,25 @@ $conn->close();
 
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>Editar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.php">Inicio</a></li>
+            <li><a href="filosofias.php">Criar Filosofia</a></li>
+            <li><a href="poemas.php">Criar Poema</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+    </nav>
+
     <div class="titulo">
         <h1>Editando <?php echo ucfirst($tabela); ?></h1>
         <label>Altere os dados e clique em salvar</label>
@@ -54,7 +67,8 @@ $conn->close();
     <form method="post">
         <div class="form-group-container">
             <div class="form-group">
-                <input type="text" name="titulo" placeholder="Título" value="<?= htmlspecialchars($registro['titulo']) ?>" required>
+                <input type="text" name="titulo" placeholder="Título"
+                    value="<?= htmlspecialchars($registro['titulo']) ?>" required>
             </div>
             <div class="form-group">
                 <input type="text" name="autor" placeholder="Autor" value="<?= htmlspecialchars($registro['autor']) ?>">
@@ -62,12 +76,15 @@ $conn->close();
         </div>
 
         <div class="form-group">
-            <textarea name="texto" rows="6" required><?= htmlspecialchars($registro[$tabela == 'filosofia' ? 'text_filo' : 'text_poema']) ?></textarea>
+            <textarea name="texto" rows="6"
+                required><?= htmlspecialchars($registro[$tabela == 'filosofia' ? 'text_filo' : 'text_poema']) ?></textarea>
         </div>
 
         <div class="form-group">
             <input type="submit" value="Salvar Alterações">
         </div>
     </form>
+    
 </body>
+
 </html>
